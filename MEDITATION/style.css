@@ -1,0 +1,228 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+
+#navbar{
+position: relative;
+
+ display:flex ; 
+ align-items: center;
+
+ 
+}
+#navbar::before{
+    content: "";
+     background-color: rgb(226, 147, 186); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+#navbar ul{
+display: flex;
+
+
+}
+#navbar ul li {
+list-style: none;
+
+
+}
+#navbar ul li a{
+
+/* font-size:1rem; */
+color:black;
+padding: 3px 22px;
+ text-decoration: none; 
+
+}
+#navbar ul li a:hover{
+
+    
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+     
+    
+    }
+ #logo { 
+margin: 10px 34px;
+
+ } 
+#logo img{
+    height: 70px;
+     margin: 3px 6px; 
+
+}
+
+
+#home{
+    display: flex;
+flex-direction:column;
+padding: 7px 200px;
+height: 591px;
+justify-content:center;
+align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(c.jpg) no-repeat ;
+     background-size: cover; 
+     transition: 5s;
+     animation-name: animate ;
+     animation-direction: alternate-reverse;
+     animation-duration: 30s;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+
+     
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+
+}
+
+@keyframes animate{
+0%{
+    background-image: url(a.jpg);
+}
+20%{
+    background-image: url(l.jpg);
+}
+40%{
+    background-image: url(s.jpg);
+}
+60%{
+    background-image: url(s6.jpg);
+}
+80%{
+    background-image: url(y.jpg);
+}
+100%{
+    background-image: url(bu.jpg);
+}
+}
+#home h1{
+color: wheat;
+text-align: center;
+font-size: 2.5rem;
+padding: 12px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 12px;
+    
+    }
+  .center{
+
+    text-align: center;
+  } 
+  .primary{
+    color: black;
+font-size: 3rem;
+    padding: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    transform:translate(0px,1px);
+    /* /* accent-color: rgba(0, 128, 0, 0.671); * */
+    background-position: top;
+    /* background-image: url(bsb.jpg) ; */
+    background-color:rgb(216, 180, 180);
+    
+    z-index: -1;
+    opacity: 0.9;
+position: relative;
+background-color: #e5e5f7;
+opacity: 0.7;
+background-image: radial-gradient(#e539df 1.25px, #e5e5f7 1.25px);
+background-size: 25px 25px;
+/* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }  
+  
+  .human .box{
+
+border: 2px solid brown;
+ width: 300px; 
+ padding: 34px;
+ margin: 2px 6px; 
+ border-radius: 30px;
+ background-color: rgba(0, 0, 255, 0.034);
+ box-shadow: 60px -16px rgba(100, 148, 237, 0.39);
+ /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+ filter: hue-rotate(90deg);
+  }
+  .human .box img{
+
+   height: 160px;
+   margin: auto;
+   display: block;
+  
+    
+      }
+  #Biography{
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
+margin: 34px;
+
+transform: translate(0px,-13);
+  }
+  .iframe{
+       width: 500px; 
+      padding: 20px;
+      
+      
+      
+  }
+  .vid{
+display: flex;
+
+/* align-items: center; */
+
+  }
+  .heading{
+padding: 20px;
+color: brown;
+size: 50px;
+ margin: 20px; 
+transform: translate( 50px,56px);
+/* box-shadow: 1px 1px red,-1em 0 .4em olive; */
+/* box-shadow: 5px 2px 2px red; */
+  }
+  .para{
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.39);
+  }
+
+  .declare{
+color: rgba(0, 0, 0, 0.705);
+font-size: 1rem;
+
+
+
+  }
+  .footer{
+
+
+padding: 2em;
+text-align: center;
+background-color: rgb(226, 147, 186); 
+  }
